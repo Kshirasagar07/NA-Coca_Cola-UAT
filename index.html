@@ -38,7 +38,9 @@ body{
     line-height:1.6;
 }
 
-/* HEADER */
+/* =========================
+   HEADER
+========================= */
 
 header{
     position:fixed;
@@ -47,11 +49,14 @@ header{
     left:0;
     width:100%;
     padding:16px 6%;
+
     display:flex;
     align-items:center;
     justify-content:space-between;
+
     background:rgba(255,255,255,.78);
     backdrop-filter:blur(16px);
+
     border-bottom:1px solid rgba(255,255,255,.5);
 }
 
@@ -59,8 +64,10 @@ header{
     display:flex;
     align-items:center;
     gap:11px;
+
     text-decoration:none;
     color:var(--ink);
+
     font-weight:800;
     font-size:1.35rem;
 }
@@ -68,18 +75,21 @@ header{
 .logo{
     width:42px;
     height:42px;
+
     border-radius:13px;
 
-    background:linear-gradient(
-        135deg,
-        var(--accent),
-        var(--accent2)
-    );
+    background:
+        linear-gradient(
+            135deg,
+            var(--accent),
+            var(--accent2)
+        );
 
     display:grid;
     place-items:center;
 
     color:white;
+
     font-family:Poppins;
     font-size:1.25rem;
 
@@ -89,20 +99,31 @@ header{
 
 .env{
     font-size:.68rem;
+
     letter-spacing:.12em;
+
     text-transform:uppercase;
+
     padding:5px 9px;
+
     border-radius:20px;
+
     background:#111;
+
     color:#fff;
+
     margin-left:5px;
 }
 
 nav a{
     color:#4c5361;
+
     text-decoration:none;
+
     margin-left:25px;
+
     font-size:.92rem;
+
     font-weight:600;
 }
 
@@ -110,27 +131,33 @@ nav a:hover{
     color:var(--accent);
 }
 
-/* HERO */
+
+/* =========================
+   HERO
+========================= */
 
 .hero{
     min-height:780px;
+
     padding:150px 6% 90px;
 
     display:flex;
+
     align-items:center;
 
     color:#fff;
 
     position:relative;
+
     overflow:hidden;
 
     background:
         linear-gradient(
             90deg,
             rgba(7,10,17,.86),
-            rgba(7,10,17,.35)
+            rgba(7,10,17,.30)
         ),
-        url('https://images.unsplash.com/photo-1485871981521-5b1fd3805eee?w=1800')
+        url('https://images.unsplash.com/photo-1778261456985-23b00126bf93?auto=format&fit=crop&fm=jpg&q=85&w=2000')
         center/cover;
 }
 
@@ -138,6 +165,7 @@ nav a:hover{
     content:"";
 
     position:absolute;
+
     inset:auto -10% -180px;
 
     height:300px;
@@ -149,13 +177,17 @@ nav a:hover{
 
 .hero-content{
     max-width:780px;
+
     position:relative;
+
     z-index:2;
 }
 
 .eyebrow{
     display:inline-flex;
+
     gap:8px;
+
     align-items:center;
 
     padding:7px 12px;
@@ -167,6 +199,7 @@ nav a:hover{
     border-radius:30px;
 
     text-transform:uppercase;
+
     letter-spacing:.14em;
 
     font-size:.7rem;
@@ -190,14 +223,19 @@ h1{
 
 .hero p{
     font-size:1.12rem;
+
     max-width:650px;
+
     color:#e9ecf2;
 }
 
 .actions{
     display:flex;
+
     gap:14px;
+
     margin-top:34px;
+
     flex-wrap:wrap;
 }
 
@@ -215,32 +253,45 @@ h1{
 
 .primary{
     background:#fff;
+
     color:#111;
 }
 
 .secondary{
     border:1px solid rgba(255,255,255,.35);
+
     color:#fff;
+
     background:rgba(255,255,255,.08);
 }
 
-/* COMMON */
+
+/* =========================
+   COMMON
+========================= */
 
 .wrap{
     width:min(1180px,88%);
+
     margin:auto;
 }
 
-/* STATS */
+
+/* =========================
+   STATS
+========================= */
 
 .stats{
     margin-top:-35px;
 
     position:relative;
+
     z-index:5;
 
     display:grid;
-    grid-template-columns:repeat(4,1fr);
+
+    grid-template-columns:
+        repeat(4,1fr);
 
     background:#fff;
 
@@ -278,10 +329,14 @@ h1{
 
 .stat span{
     font-size:.82rem;
+
     color:var(--muted);
 }
 
-/* SECTIONS */
+
+/* =========================
+   SECTIONS
+========================= */
 
 section{
     padding:100px 0;
@@ -309,10 +364,14 @@ section{
 
 .section-head p{
     max-width:520px;
+
     color:var(--muted);
 }
 
-/* PRODUCTS */
+
+/* =========================
+   PRODUCTS
+========================= */
 
 .products{
     display:grid;
@@ -349,6 +408,7 @@ section{
     height:245px;
 
     background-size:cover;
+
     background-position:center;
 }
 
@@ -412,7 +472,10 @@ section{
     color:var(--accent);
 }
 
-/* FEATURES */
+
+/* =========================
+   FEATURES
+========================= */
 
 .feature-grid{
     display:grid;
@@ -472,7 +535,10 @@ section{
     font-size:.9rem;
 }
 
-/* CAMPAIGN */
+
+/* =========================
+   CAMPAIGN
+========================= */
 
 .banner{
     border-radius:30px;
@@ -499,6 +565,7 @@ section{
     position:absolute;
 
     right:4%;
+
     bottom:-35px;
 
     font-size:12rem;
@@ -526,7 +593,10 @@ section{
     color:rgba(255,255,255,.88);
 }
 
-/* FOOTER */
+
+/* =========================
+   FOOTER
+========================= */
 
 footer{
     background:#101217;
@@ -550,7 +620,10 @@ footer strong{
     color:white;
 }
 
-/* MOBILE */
+
+/* =========================
+   MOBILE
+========================= */
 
 @media(max-width:850px){
 
@@ -586,6 +659,7 @@ footer strong{
     .hero{
         min-height:700px;
     }
+
 }
 
 </style>
@@ -593,11 +667,18 @@ footer strong{
 
 <body>
 
+
+<!-- =========================
+     HEADER
+========================= -->
+
 <header>
 
     <a class="brand" href="#home">
 
-        <span class="logo">C</span>
+        <span class="logo">
+            C
+        </span>
 
         Colazo
 
@@ -607,16 +688,37 @@ footer strong{
 
     </a>
 
+
     <nav>
-        <a href="#products">Products</a>
-        <a href="#experience">Experience</a>
-        <a href="#campaign">Campaign</a>
+
+        <a href="#products">
+            Products
+        </a>
+
+        <a href="#experience">
+            Experience
+        </a>
+
+        <a href="#campaign">
+            Campaign
+        </a>
+
     </nav>
 
 </header>
 
 
+
+<!-- =========================
+     MAIN
+========================= -->
+
 <main id="home">
+
+
+<!-- =========================
+     HERO
+========================= -->
 
 <section class="hero">
 
@@ -626,23 +728,33 @@ footer strong{
             Colazo • North America • Coca-Cola • User Acceptance Testing
         </span>
 
+
         <h1>
             Spark something bigger.
         </h1>
 
+
         <p>
-            A bold, modern refreshment experience inspired by American
-            city energy, weekend road trips and the moments that bring
-            people together.
+            A bold, modern refreshment experience inspired by
+            North American city energy, weekend road trips and
+            the moments that bring people together.
         </p>
+
 
         <div class="actions">
 
-            <a class="btn primary" href="#products">
+            <a
+                class="btn primary"
+                href="#products"
+            >
                 Explore products
             </a>
 
-            <a class="btn secondary" href="#campaign">
+
+            <a
+                class="btn secondary"
+                href="#campaign"
+            >
                 View campaign
             </a>
 
@@ -653,44 +765,89 @@ footer strong{
 </section>
 
 
+
+<!-- =========================
+     STATS
+========================= -->
+
 <div class="wrap">
 
     <div class="stats">
 
-        <div class="stat">
-            <strong>12+</strong>
-            <span>market-ready products</span>
-        </div>
 
         <div class="stat">
-            <strong>50M+</strong>
-            <span>digital moments</span>
+
+            <strong>
+                12+
+            </strong>
+
+            <span>
+                market-ready products
+            </span>
+
         </div>
 
-        <div class="stat">
-            <strong>24/7</strong>
-            <span>customer touchpoints</span>
-        </div>
 
         <div class="stat">
-            <strong>100%</strong>
-            <span>UAT-ready flow</span>
+
+            <strong>
+                50M+
+            </strong>
+
+            <span>
+                digital moments
+            </span>
+
         </div>
+
+
+        <div class="stat">
+
+            <strong>
+                24/7
+            </strong>
+
+            <span>
+                customer touchpoints
+            </span>
+
+        </div>
+
+
+        <div class="stat">
+
+            <strong>
+                100%
+            </strong>
+
+            <span>
+                UAT-ready flow
+            </span>
+
+        </div>
+
 
     </div>
 
 </div>
 
 
+
+<!-- =========================
+     PRODUCTS
+========================= -->
+
 <section id="products">
 
 <div class="wrap">
+
 
     <div class="section-head">
 
         <h2>
             Made for North America
         </h2>
+
 
         <p>
             Explore a localized Coca-Cola experience with products,
@@ -701,105 +858,138 @@ footer strong{
     </div>
 
 
+
     <div class="products">
 
 
+        <!-- PRODUCT 1 -->
+
         <article class="product-card">
+
 
             <div
                 class="product-image"
                 style="
                 background-image:url(
                 'https://images.unsplash.com/photo-1622483767028-3f66f32aef97?w=900'
-                )">
+                )"
+            >
             </div>
 
+
             <div class="product-body">
+
 
                 <span class="pill">
                     Signature
                 </span>
 
+
                 <h3>
                     Coca-Cola Classic
                 </h3>
 
+
                 <p>
-                    The classic Coca-Cola experience with its
-                    familiar refreshing taste.
+                    The classic Coca-Cola experience with
+                    its familiar refreshing taste.
                 </p>
+
 
                 <button class="outline-btn">
                     View product
                 </button>
+
 
             </div>
 
         </article>
 
 
+
+        <!-- PRODUCT 2 -->
+
         <article class="product-card">
+
 
             <div
                 class="product-image"
                 style="
                 background-image:url(
                 'https://images.unsplash.com/photo-1629203851122-3726ecdf080e?w=900'
-                )">
+                )"
+            >
             </div>
 
+
             <div class="product-body">
+
 
                 <span class="pill">
                     Zero Sugar
                 </span>
 
+
                 <h3>
                     Coca-Cola Zero Sugar
                 </h3>
+
 
                 <p>
                     Great Coca-Cola taste with zero sugar,
                     designed for modern consumers.
                 </p>
 
+
                 <button class="outline-btn">
                     View product
                 </button>
+
 
             </div>
 
         </article>
 
 
+
+        <!-- PRODUCT 3 -->
+
         <article class="product-card">
+
 
             <div
                 class="product-image"
                 style="
                 background-image:url(
                 'https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?w=900'
-                )">
+                )"
+            >
             </div>
 
+
             <div class="product-body">
+
 
                 <span class="pill">
                     Limited
                 </span>
 
+
                 <h3>
                     Coca-Cola Flavors
                 </h3>
+
 
                 <p>
                     Discover refreshing flavors created for
                     different North American moments.
                 </p>
 
+
                 <button class="outline-btn">
                     View product
                 </button>
+
 
             </div>
 
@@ -813,31 +1003,47 @@ footer strong{
 </section>
 
 
+
+<!-- =========================
+     EXPERIENCE
+========================= -->
+
 <section id="experience">
 
 <div class="wrap">
 
+
     <div class="section-head">
+
 
         <h2>
             Experience the brand
         </h2>
 
+
         <p>
-            Components designed to demonstrate a polished regional
-            experience for web, mobile and customer-service journeys.
+            Components designed to demonstrate a polished
+            regional experience for web, mobile and
+            customer-service journeys.
         </p>
+
 
     </div>
 
 
+
     <div class="feature-grid">
 
+
+        <!-- FEATURE 1 -->
+
         <div class="feature">
+
 
             <div class="feature-icon">
                 ✦
             </div>
+
 
             <div>
 
@@ -845,8 +1051,10 @@ footer strong{
                     Smart personalization
                 </h3>
 
+
                 <p>
-                    Dynamic recommendations and localized content blocks.
+                    Dynamic recommendations and localized
+                    content blocks.
                 </p>
 
             </div>
@@ -854,11 +1062,16 @@ footer strong{
         </div>
 
 
+
+        <!-- FEATURE 2 -->
+
         <div class="feature">
+
 
             <div class="feature-icon">
                 ◎
             </div>
+
 
             <div>
 
@@ -866,8 +1079,10 @@ footer strong{
                     Fast service
                 </h3>
 
+
                 <p>
-                    Service journeys designed for quick customer resolution.
+                    Service journeys designed for quick
+                    customer resolution.
                 </p>
 
             </div>
@@ -875,11 +1090,16 @@ footer strong{
         </div>
 
 
+
+        <!-- FEATURE 3 -->
+
         <div class="feature">
+
 
             <div class="feature-icon">
                 ↗
             </div>
+
 
             <div>
 
@@ -887,8 +1107,10 @@ footer strong{
                     Digital-first
                 </h3>
 
+
                 <p>
-                    Responsive experiences across mobile and desktop.
+                    Responsive experiences across mobile
+                    and desktop.
                 </p>
 
             </div>
@@ -896,11 +1118,16 @@ footer strong{
         </div>
 
 
+
+        <!-- FEATURE 4 -->
+
         <div class="feature">
+
 
             <div class="feature-icon">
                 ★
             </div>
+
 
             <div>
 
@@ -908,40 +1135,57 @@ footer strong{
                     Campaign ready
                 </h3>
 
+
                 <p>
-                    Flexible hero, promotion and CTA components.
+                    Flexible hero, promotion and CTA
+                    components.
                 </p>
 
             </div>
 
         </div>
 
+
     </div>
 
 </div>
 
 </section>
 
+
+
+<!-- =========================
+     CAMPAIGN
+========================= -->
 
 <section id="campaign">
 
 <div class="wrap">
 
+
     <div class="banner">
+
 
         <h2>
             One brand. A local spark.
         </h2>
 
+
         <p>
-            Use this North America UAT page to validate regional content,
-            product cards, promotional journeys and customer-service
-            entry points before production.
+            Use this North America UAT page to validate
+            regional content, product cards, promotional
+            journeys and customer-service entry points
+            before production.
         </p>
 
-        <a class="btn primary" href="#products">
+
+        <a
+            class="btn primary"
+            href="#products"
+        >
             Discover Coca-Cola
         </a>
+
 
     </div>
 
@@ -949,21 +1193,38 @@ footer strong{
 
 </section>
 
+
 </main>
 
 
+
+<!-- =========================
+     FOOTER
+========================= -->
+
 <footer>
 
-    <div>
-        <strong>Colazo</strong>
-        — North America Coca-Cola UAT Experience
-    </div>
 
     <div>
-        Demo environment • NA-UAT • © 2026 Colazo
+
+        <strong>
+            Colazo
+        </strong>
+
+        — North America Coca-Cola UAT Experience
+
     </div>
+
+
+    <div>
+
+        Demo environment • NA-UAT • © 2026 Colazo
+
+    </div>
+
 
 </footer>
+
 
 </body>
 </html>
